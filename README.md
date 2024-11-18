@@ -15,5 +15,7 @@ The object/robot in the program, denoted as "@", navigate the maze in the most e
 ### Credits
 
 [A* Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
+<br>
 [Manhattan Distance](https://www.datacamp.com/tutorial/manhattan-distance)
+<br>
 [ChatGPT](https://chatgpt.com/)
