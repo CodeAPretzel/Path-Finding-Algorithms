@@ -1,6 +1,6 @@
 # - Path Finding Algorithms -
 
-For the 2024 Missouri Hacks Competition.
+For the 2024 Missouri Hacks Hackathon.
 
 <br>
 
