@@ -1,5 +1,16 @@
 """
-Code created by @CodeAPretzel, Pretson G., and ChatGPT (used for math and AI models).
+Code created by @CodeAPretzel, Pretson G., and ChatGPT (for A* algorithm and Manhattan distance in python).
+
+---
+
+Note on "path-data" file:
+
+> = starting point
+. = free spaces
+@ = object/robot navigating the system
+# = obstacles
+* = end goal
+
 """
 
 import math
@@ -26,7 +37,7 @@ def GetNeighbors(position, grid):
     x, y = position
     neighbors = []
     directions = [
-        (0, -1), (0, 1), (-1, 0), (1, 0),  # Cardinal directions
+        (0, -1), (0, 1), (-1, 0), (1, 0),  # Vertical and horizontal directions
         (-1, -1), (1, -1), (-1, 1), (1, 1)  # Diagonal directions
     ]
     
@@ -66,11 +77,11 @@ def DestinationSearch(grid, start, goal):
     return None
 
 def ClearTerminal():
-    # Cross-platform method to clear the terminal
+    # Dual clear terminal
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def DisplayGrid(grid, robotPos=None):
-    # Render the grid in-place
+    # Render the grid
     if robotPos:
         x, y = robotPos
         original = grid[y][x]  # Save the original character
